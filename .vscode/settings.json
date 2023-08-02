@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "*.page-template": "vue",
+        "*.layout-template": "vue",
+        "*.vue": "vue",
+        "*.css": "tailwindcss"
+    },
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "off",
+        "strings": "on"
+    },
+    "tailwindCSS.experimental.configFile": "tailwind.config.ts",
+}
