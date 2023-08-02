@@ -2,5 +2,8 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/content', '@nuxthq/ui'],
-  content: {}
+  content: {},
+  experimental: {
+    payloadExtraction: false,
+  }
 })
