@@ -1,20 +1,15 @@
 {
-  "name": "nuxt-app",
-  "private": true,
+  "name": "astro",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "deploy": "gh-pages -d dist"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "devDependencies": {
-    "@nuxt/content": "^2.7.2",
-    "@nuxt/devtools": "latest",
-    "@nuxthq/ui": "^2.7.0",
-    "@types/node": "^18.17.1",
-    "gh-pages": "^5.0.0",
-    "nuxt": "^3.6.5"
+  "dependencies": {
+    "astro": "^2.10.1"
   }
 }
