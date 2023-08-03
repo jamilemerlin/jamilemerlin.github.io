@@ -5,19 +5,17 @@ import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
 ---
 
-<BaseLayout title="About | Jeanine White" description="About Jeanine White Lorem Ipsum">
+<BaseLayout title="About | Jamile Merlin" description="About Jamile Merlin">
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
 				title="About"
 				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
 			>
-				<img
-					width="1553"
-					height="873"
-					src="/assets/at-work.jpg"
-					alt="Jeanine White at work with a colleague"
-				/>
+				<!-- <img
+					src="/assets/portrait.jpg"
+					alt="Jamile Merlin similing"
+				/> -->
 			</Hero>
 
 			<section>
@@ -69,6 +67,7 @@ import Hero from '../components/Hero.astro';
 	}
 
 	img {
+		max-width: 300px;
 		margin-top: 1.5rem;
 		border-radius: 1.5rem;
 		box-shadow: var(--shadow-md);
