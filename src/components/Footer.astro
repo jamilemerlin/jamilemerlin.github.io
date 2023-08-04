@@ -1,6 +1,13 @@
 ---
 import Icon from './Icon.astro';
 const currentYear = new Date().getFullYear();
+
+const iconLinks: { label: string; href: string }[] = [
+	{
+		label: 'LinkedIn',
+		href: 'https://linkedin.com/in/jamilemerlin',
+	}
+]
 ---
 
 <footer>
@@ -8,8 +15,11 @@ const currentYear = new Date().getFullYear();
 		<p>&copy; {currentYear} Jamile Merlin</p>
 	</div>
 	<p class="socials">
-		<a href="https://linkedin.com/in/jamilemerlin"> LinkedIn</a>
-		<a href="https://github.com/jamilemerlin"> GitHub</a>
+		{
+			iconLinks.map(({ href, label }) => (
+				<a href={href}>{label}</a>
+			))
+		}
 	</p>
 </footer>
 <style>
