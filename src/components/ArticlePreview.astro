@@ -1,0 +1,17 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Datetime from './Datetime.astro';
+
+interface Props {
+	article: CollectionEntry<'articles'>;
+}
+
+const { data, slug } = Astro.props.article;
+---
+
+<a href={`/articles/${slug}`} class="inline-block text-lg font-medium no-underline text-slate-100 hover:underline underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0">
+	<h2 class="text-lg font-medium">{data.title}</h2>
+	<Datetime datetime={data.publishDate} />
+	<p>{data.description}</p>
+</a>
+
